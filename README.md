@@ -1,4 +1,4 @@
 # H1 Проект второго спринта "Посмотри в окно"
 
 В проекте велась работа по доработке стилей на уже размеченном проекте.
-Ссылка на репозитарий: https://github.com/sergkalachev/ono-tebe-nado
+Ссылка на репозитарий: https://github.com/sergkalachev/posmotri_v_okno
