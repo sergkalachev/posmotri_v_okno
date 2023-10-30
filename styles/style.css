@@ -58,8 +58,8 @@ ol {
 
 .result__video-container {
   position: relative; /*позиционируем прелоадер*/
-  width: 711px;
-  height: 386px;
+  inline-size: 711px; /*используем логическую модель*/
+  block-size: 386px;
   margin-bottom: 16px;
 }
 
@@ -86,7 +86,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -101,14 +101,14 @@ ol {
 
 .search-form__textfield {
   padding: 2.5px 12px 2.5px 0;
-  color: rgb(255, 255, 255, 0.7);
+  color: #FFF;
   background-color: transparent;
   font-family: inherit;
   font-weight: inherit;
   font-size: inherit;
-  border-top: 1px solid #FFF;
+  border-top: 1px solid currentColor;
   border-right: none;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid currentColor;
   border-left: none;
   inline-size: 225px;
   appearance: none; /*Так в разных браузерах будут нужные стили*/
@@ -148,10 +148,6 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__label:hover {
-  text-decoration: underline 1px #FFF;
-}
-
 .content__list {
   position: relative; /*позиционируем прелоадер*/
   height: 298px; /* 534px - 238px*/
@@ -175,7 +171,7 @@ ol {
 
 .content__video-card-title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -234,7 +230,7 @@ ol {
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -249,7 +245,7 @@ ol {
   background-color: transparent;
   font-weight: 700;
   font-size: 18px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   padding: 6px 0;
   cursor: pointer;
   text-align: center;
