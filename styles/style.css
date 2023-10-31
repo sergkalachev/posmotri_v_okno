@@ -99,6 +99,15 @@ ol {
   gap: 5px;
 }
 
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
+.search-form__label:has(input[type=checkbox]):hover {
+  text-decoration: underline 1px #FFF;
+}
+
 .search-form__textfield {
   padding: 2.5px 12px 2.5px 0;
   color: #FFF;
@@ -141,11 +150,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
 }
 
 .content__list {
